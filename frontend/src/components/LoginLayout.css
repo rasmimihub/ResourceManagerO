@@ -1,0 +1,27 @@
+.layout-container {
+  display: flex;
+  min-height: 100vh;
+}
+.login-section, .welcome-section {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-section {
+  background: #fafafa;
+  border-right: 1px solid #eee;
+}
+.welcome-section {
+  background: #fff;
+}
+@media (max-width: 768px) {
+  .layout-container {
+    flex-direction: column;
+  }
+  .login-section, .welcome-section {
+    border: none;
+    padding: 1rem;
+  }
+}
