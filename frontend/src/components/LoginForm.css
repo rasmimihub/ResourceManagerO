@@ -1,0 +1,128 @@
+.login-form-card {
+  background: #fff;
+  padding: 2.5rem 2.2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+  width: 350px;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+.login-form-card:hover {
+  box-shadow: 0 12px 40px rgba(44, 62, 80, 0.18);
+}
+.logo {
+  width: 70px;
+  margin-bottom: 1.2rem;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(44, 62, 80, 0.13);
+}
+h2 {
+  margin-bottom: 0.2rem;
+  color: #2d3436;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.subtitle {
+  color: #636e72;
+  margin-bottom: 1.2rem;
+  font-size: 1rem;
+}
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  background: #ecf0f1;
+  border-radius: 8px;
+  padding: 0.5rem 0.8rem;
+}
+.input-icon {
+  margin-right: 0.5rem;
+  color: #6a82fb;
+  font-size: 1.2rem;
+}
+input[type="text"], input[type="password"] {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+.forgot-row {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.forgot-row a {
+  color: #6a82fb;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.forgot-row a:hover {
+  color: #fc5c7d;
+}
+.login-btn, .admin-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #fff;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.1);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.login-btn:hover {
+  background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+  box-shadow: 0 4px 16px rgba(44, 62, 80, 0.13);
+}
+.admin-btn {
+  background: linear-gradient(90deg, #fc5c7d 0%, #6a82fb 100%);
+}
+.admin-btn:hover {
+  background: linear-gradient(90deg, #6a82fb 0%, #fc5c7d 100%);
+}
+.divider {
+  margin: 0.7rem 0;
+  position: relative;
+  text-align: center;
+}
+.divider span {
+  background: #fff;
+  padding: 0 1rem;
+  color: #aaa;
+  position: relative;
+  z-index: 1;
+}
+.divider:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: #eee;
+  z-index: 0;
+}
+.register-row {
+  margin-top: 1.2rem;
+  font-size: 0.97rem;
+}
+.register-row a {
+  color: #fc5c7d;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.register-row a:hover {
+  color: #6a82fb;
+}
+@media (max-width: 500px) {
+  .login-form-card {
+    width: 95vw;
+    padding: 1.4rem 0.8rem;
+  }
+}
