@@ -1,27 +1,24 @@
 .layout-container {
-  display: flex;
   min-height: 100vh;
-}
-.login-section, .welcome-section {
-  flex: 1;
-  padding: 2rem;
   display: flex;
+  background: linear-gradient(120deg, #f5f7fa 0%, #c3cfe2 100%);
   align-items: center;
   justify-content: center;
 }
-.login-section {
-  background: #fafafa;
-  border-right: 1px solid #eee;
+.login-section, .welcome-section {
+  flex: 1 1 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
 }
-.welcome-section {
-  background: #fff;
-}
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .layout-container {
     flex-direction: column;
+    padding: 2rem 0;
   }
   .login-section, .welcome-section {
-    border: none;
-    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 }

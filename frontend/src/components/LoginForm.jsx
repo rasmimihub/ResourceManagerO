@@ -1,20 +1,39 @@
+import { FaUser, FaLock } from "react-icons/fa";
+import "./LoginForm.css";
+
 export default function LoginForm() {
   return (
-    <div className="login-form">
-      <div className="logo">Logo</div>
-      <h2>Login</h2>
-      <label>
-        Enter your account details
-        <input type="text" placeholder="Email or Username" />
-      </label>
-      <label>
-        <input type="password" placeholder="Password" />
-      </label>
-      <a href="#">Forgot password?</a>
-      <button>Login</button>
-      <div>OR</div>
-      <button>Login as admin</button>
-      <div>
+    <div className="login-form-card">
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Student_icon.png"
+        alt="Student Portal Logo"
+        className="logo"
+      />
+      <h2>Welcome Back</h2>
+      <p className="subtitle">Sign in to access your resources</p>
+      <form>
+        <div className="input-group">
+          <FaUser className="input-icon" />
+          <input type="text" placeholder="Email or Username" required />
+        </div>
+        <div className="input-group">
+          <FaLock className="input-icon" />
+          <input type="password" placeholder="Password" required />
+        </div>
+        <div className="forgot-row">
+          <a href="#">Forgot password?</a>
+        </div>
+        <button className="login-btn" type="submit">
+          Login
+        </button>
+        <div className="divider">
+          <span>OR</span>
+        </div>
+        <button className="admin-btn" type="button">
+          Login as Admin
+        </button>
+      </form>
+      <div className="register-row">
         Don't have an account? <a href="#">Register</a>
       </div>
     </div>
