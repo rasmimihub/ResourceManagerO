@@ -1,11 +1,12 @@
 import { FaUser, FaLock } from "react-icons/fa";
 import "./LoginForm.css";
+import logo from "../assets/logo.png";
 
 export default function LoginForm() {
   return (
     <div className="login-form-card">
       <img
-        src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Student_icon.png"
+        src={logo}
         alt="Student Portal Logo"
         className="logo"
       />
