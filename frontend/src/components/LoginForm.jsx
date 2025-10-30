@@ -2,7 +2,7 @@ import { FaUser, FaLock } from "react-icons/fa";
 import "./LoginForm.css";
 import logo from "../assets/logo.png";
 
-export default function LoginForm() {
+export default function LoginForm({ switchToRegister, switchToAdminLogin, switchToForgot}) {
   return (
     <div className="login-form-card">
       <img
@@ -22,7 +22,14 @@ export default function LoginForm() {
           <input type="password" placeholder="Password" required />
         </div>
         <div className="forgot-row">
-          <a href="#">Forgot password?</a>
+          <label className="remember-me">
+    <input type="checkbox" />
+    <span className="custom-checkbox"></span>
+    Remember me
+  </label>
+          <a style={{ cursor: "pointer" }} onClick={switchToForgot}>
+  Forgot password?
+</a>
         </div>
         <button className="login-btn" type="submit">
           Login
@@ -30,12 +37,17 @@ export default function LoginForm() {
         <div className="divider">
           <span>OR</span>
         </div>
-        <button className="admin-btn" type="button">
-          Login as Admin
-        </button>
+       <button className="admin-btn" type="button" onClick={switchToAdminLogin}>
+      Login as Admin
+    </button>
       </form>
       <div className="register-row">
-        Don't have an account? <a href="#">Register</a>
+        <p>
+        Don't have an account?{' '}
+        <span style={{ color: 'blue', cursor: 'pointer' }} onClick={switchToRegister}>
+          Register here
+        </span>
+        </p>
       </div>
     </div>
   );
